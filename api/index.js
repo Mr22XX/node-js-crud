@@ -34,7 +34,7 @@ db.connect((error) => {
             }
             const data = JSON.parse(JSON.stringify(result));
             console.log('Hasil database =>', data);
-            res.render("index", { mahasiswa: data, title: "Welcome Rayhan" });
+            res.render("./api/index", { mahasiswa: data, title: "Welcome Rayhan" });
         });
     });
 
